@@ -26,6 +26,7 @@ def get_detail(username):
                 sarparast=user.sarparast,
                 ostad=user.ostad,
                 verify=user.verify,
+                hour=user.hour
                 )
                 return make_response(res_str('wait',info),200)
         return make_response('id ',400)

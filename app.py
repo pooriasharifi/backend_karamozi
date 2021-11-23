@@ -1,7 +1,10 @@
-# from model.user import Users, Comment
+# # from model.user import Users, Comment
 from flask import Flask
 from flask.helpers import make_response
+from os import name
 from mongoengine import connect
+
+from model.ostad import Ostad
 
 
 
@@ -47,7 +50,12 @@ def home():
     return make_response('server is ready',200)
 
 
-
+# ostad_obj=Ostad(
+#     name='استاد مختاری',
+#     username= 12345673,
+#     password='1234567',
+#     sign=10,
+# ).save()
 
 
 
@@ -55,5 +63,5 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1',port=5000, debug=True)
+    app.run(host='0.0.0.0',port=3000, debug=True)
 

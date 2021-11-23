@@ -24,7 +24,8 @@ def get_userComment(username):
             else:
                 res_data.append(dict(
                         sign=user.sign,
-                        verify=user.verify
+                        verify=user.verify,
+                        hour=user.hour
                     ))
                 for item in user.comments:
                     # print(item.comment)

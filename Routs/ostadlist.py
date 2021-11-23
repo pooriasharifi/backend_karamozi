@@ -31,6 +31,7 @@ def asami_get(username):
                     ostad_send.append(dict(
                         name=item.name,
                         username=item.username,
+                        hour=item.hour,
                     ))
                 # print(ostad_send)
                 return make_response(res_str('wait',ostad_send),200)
