@@ -1,6 +1,5 @@
 from mongoengine import Document, fields, EmbeddedDocument
 
-# from model.comment import Comment
 
 
 class Comment(EmbeddedDocument):
