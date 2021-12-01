@@ -56,13 +56,6 @@ def home():
     return make_response('server is ready',200)
 
 
-# ostad_obj=Ostad(
-#     name='استاد مختاری',
-#     username= 12345673,
-#     password='1234567',
-#     sign=10,
-# ).save()
-
 
 
 
