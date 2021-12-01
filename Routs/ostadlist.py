@@ -26,8 +26,6 @@ def asami_get(username):
                 if not user_obj:
                     return make_response({"message":"user not found","status":404},404)
                 for item in user_obj:
-                #     if iteme.verify==True:
-                #         if item.sign==ostad_obj.sign:
                     ostad_send.append(dict(
                         name=item.name,
                         username=item.username,
@@ -52,21 +50,3 @@ def asami_get(username):
 
 
 
-
-
-    #     user_ostad=Ostad.objects(username=username).first()
-    #     user_list=Users.objects()
-    #     res_data=list()
-    #     for item in user_list:
-    #         if item.verify==True:
-    #             if item.sign==user_ostad.sign:
-
-    #                print(item.sign)
-    #                list_temp=dict(
-    #                name=item.name,
-    #                username=item.username,
-    #             )
-    #             res_data.append(list_temp)
-    #     return make_response(res_str('wait',res_data),200)
-    # except OSError as err:
-    #     return make_response('internal server error',400)
