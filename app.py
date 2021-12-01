@@ -4,7 +4,7 @@ from flask.helpers import make_response
 from os import name
 from mongoengine import connect
 
-from model.ostad import Ostad
+# from model.ostad import Ostad
 
 
 
@@ -22,8 +22,14 @@ from Routs.feth_ostad import fetchOstad
 from Routs.signup import signup
 from Routs.hour import hour
 
-db=connect('karamoz') 
+
+DB_URI ="mongodb+srv://pooriasharifi577:MR279324ky@cluster0.t0eso.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+
+
 app = Flask(__name__)
+
+connect(host=DB_URI)
 
 
 app.register_blueprint(signin)
@@ -63,5 +69,5 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=3000, debug=True)
+    app.run(host='0.0.0.0',port=5000, debug=True)
 

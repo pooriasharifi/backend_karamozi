@@ -1,0 +1,17 @@
+click           
+dnspython       
+Flask           
+itsdangerous    
+Jinja2          
+MarkupSafe      
+mongoengine     
+numpy           
+pandas          
+passlib         
+pip             
+pymongo         
+python-dateutil 
+pytz            
+setuptools      
+six             
+Werkzeug 
