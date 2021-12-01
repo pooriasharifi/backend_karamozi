@@ -2,7 +2,6 @@ import sys
 import mongoengine
 sys.path.append('../')
 from model.user import Users, Comment
-# from model.comment import Comment
 from flask import Blueprint, request, Flask,make_response
 from helper.res_struct import res_str
 
@@ -28,13 +27,11 @@ def get_userComment(username):
                         hour=user.hour
                     ))
                 for item in user.comments:
-                    # print(item.comment)
                     info=dict(
                         comment=item.comment,
                         date=item.date,
                         timer=item.timer,
                     )
-                    # {'sign':user.sign,'verify':user.verify}
                     res_data.append(info)
                     
                     print(info)
