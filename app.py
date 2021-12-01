@@ -23,7 +23,7 @@ from Routs.signup import signup
 from Routs.hour import hour
 
 
-DB_URI ="mongodb+srv://pooriasharifi577:MR279324ky@cluster0.t0eso.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DB_URI ="mongodb+srv://<>username:<password>@cluster0.t0eso.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 
 
